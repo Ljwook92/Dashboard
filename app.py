@@ -4,6 +4,7 @@ import dash_bootstrap_components as dbc
 import pandas as pd
 import numpy as np
 import joblib
+from merf import MERF
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
@@ -291,5 +292,10 @@ def plot_bmi(n_clicks, case):
     except Exception as e:
         return html.P(f"Failed to generate plot: {e}")
 
+# if __name__ == "__main__":
+#     app.run(debug=True)
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    import os
+    port = int(os.environ.get("PORT", 8080))
+    app.run_server(debug=False, host="0.0.0.0", port=port)
