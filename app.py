@@ -36,8 +36,8 @@ input_card = dbc.Card([
     dbc.Alert([
         html.H5("User Guidelines:"),
         html.P("1. This dashboard is designed for youth(12~18) with Type 1 Diabetes.", className="mb-1"),
-        html.P("2. Previous 24-hour CGM (Continuous Glucose Monitoring) data is required.", className="mb-0"),
-        html.P("3. To help you explore the features, this dashboard includes sample cases of normal, hyper-, and hypo-glycemia.", className="mb-0")
+        html.P("2. A Garmin Watch and a Continuous Glucose Monitor (CGM) with at least 24 hours of prior data are required for accurate analysis.", className="mb-0"),
+        html.P("3. Regular glucose monitoring is highly encouraged to support better self-management and improved outcomes.", className="mb-0")
     ], color="danger", className="mb-4"),
 
     # html.H5("Patient Information"),
