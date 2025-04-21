@@ -35,7 +35,7 @@ input_card = dbc.Card([
     html.H3("Type 1 Diabetes Dashboard", className="text-center mb-2 mt-3"),
     dbc.Alert([
         html.H5("User Guidelines:"),
-        html.P("1. This dashboard is designed for youth(2~20) with Type 1 Diabetes.", className="mb-1"),
+        html.P("1. This dashboard is designed for youth(12~18) with Type 1 Diabetes.", className="mb-1"),
         html.P("2. Previous 24-hour CGM (Continuous Glucose Monitoring) data is required.", className="mb-0"),
         html.P("3. To help you explore the features, this dashboard includes sample cases of normal, hyper-, and hypo-glycemia.", className="mb-0")
     ], color="danger", className="mb-4"),
@@ -54,7 +54,7 @@ input_card = dbc.Card([
         id="gender", className="mb-3"
     ),
     dbc.Label("Age:"),
-    dbc.Input(type="number", id="age", placeholder="Enter age (ages 2–20)", className="mb-3"),
+    dbc.Input(type="number", id="age", placeholder="Enter age (ages 12–18)", className="mb-3"),
     dbc.Label("Height (cm):"),
     dbc.Input(type="number", id="height", placeholder="Enter height", className="mb-3"),
     dbc.Label("Weight (kg):"),
